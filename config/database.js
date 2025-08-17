@@ -1,11 +1,13 @@
-const path = require('path');
-
+// ./config/database.js
 module.exports = ({ env }) => ({
   connection: {
-    client: 'sqlite',
+    client: 'postgres',
     connection: {
-      filename: env('DATABASE_FILENAME', path.join(__dirname, '..', '.tmp/data.db')),
+      connectionString: env('DATABASE_URL'),
+      ssl: env.bool('DATABASE_SSL', false) && {
+        rejectUnauthorized: false,
+      },
     },
-    useNullAsDefault: true,
+    pool: { min: 0, max: 5 },
   },
 });
