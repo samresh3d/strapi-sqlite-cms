@@ -112,3 +112,14 @@ license.txt
 exports
 .cache
 build
+.strapi-updater.json
+
+############################
+# SQLite Database Files
+############################
+
+*.db
+*.db3
+data.db
+database.sqlite
+.tmp.db
