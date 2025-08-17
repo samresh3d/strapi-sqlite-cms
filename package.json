@@ -10,10 +10,10 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.1.7",
-    "@strapi/plugin-users-permissions": "4.1.7",
-    "@strapi/provider-upload-aws-s3": "^4.1.7",
-    "@strapi/strapi": "4.1.7",
+    "@strapi/plugin-i18n": "^4.24.0",
+    "@strapi/plugin-users-permissions": "^4.24.0",
+    "@strapi/provider-upload-aws-s3": "^4.24.0",
+    "@strapi/strapi": "^4.24.0",
     "pg": "^8.11.3"
   },
   "author": {
@@ -23,7 +23,7 @@
     "uuid": "b4a9b934-98e8-401e-9f60-ad3319a3e359"
   },
   "engines": {
-    "node": ">=10.0.0",
+    "node": ">=16.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
